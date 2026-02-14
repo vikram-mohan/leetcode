@@ -12,6 +12,7 @@ def slidingwindow(data, k):
         # If we have more than k zeros, shrink from the left
         while flips > k:
             if data[left] == 0:
+                # we used one flip previously so can shrink further
                 flips -= 1
             left += 1
         
