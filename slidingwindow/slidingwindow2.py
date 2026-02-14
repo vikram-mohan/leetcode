@@ -1,4 +1,8 @@
 #longest subarray with sum less than k
+#the solution doesnt work if neg nums
+# collapsed below invariant
+# Expanding window → sum increases
+# Shrinking window → sum decreases
 def slidingwindow(data, k):
 
     left, windowSum = 0, 0
